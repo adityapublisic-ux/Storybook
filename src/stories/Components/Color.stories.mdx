@@ -1,0 +1,51 @@
+```mdx
+import { Meta, Story, Preview } from '@storybook/addon-docs';
+import { ColorPallet } from './ColorPallet';
+
+<Meta title="Components/Color Pallet" component={ColorPallet} />
+
+# Color Pallet
+
+The Color Pallet component serves as a visual reference for the color scheme used throughout the application. It provides access to various color tokens and their corresponding values, ensuring consistency in design and enhancing accessibility.
+
+## Usage Guidelines
+
+Use the Color Pallet component when you need to reference or showcase the brand's color scheme. It is particularly useful for design handoffs, style guides, and when creating new components to ensure color consistency. Avoid using it in scenarios where specific color values are required directly in UI components; instead, use the defined color tokens.
+
+## Variants and Use Cases
+
+- **Standard Colors**: For primary branding and UI elements.
+- **Extended Palet**: For special states (error, success, warning).
+- **Text Colors**: To ensure text readability against backgrounds.
+  
+## Props/Properties Table
+
+| Prop Name | Type   | Description                                       | Default    |
+|-----------|--------|---------------------------------------------------|------------|
+| colors    | array  | Array of color values available in the palette.   | `[]`       |
+| spacing   | array  | Array of spacing values for layout consistency.    | `[]`       |
+| typography| array  | Array of typography settings for text elements.    | `[]`       |
+| variables  | object | Object containing the custom color and spacing variables. | `{}`      |
+
+## Code Snippet
+
+```jsx
+import React from 'react';
+import { ColorPallet } from './ColorPallet';
+
+const App = () => (
+  <div>
+    <h1>My Application</h1>
+    <ColorPallet />
+  </div>
+);
+
+export default App;
+```
+
+## Accessibility Notes
+
+- **ARIA**: The Color Pallet component should have appropriate ARIA labels to describe the purpose of each color swatch to assistive technologies.
+- **Keyboard Navigation**: Ensure that users can navigate through the colors using the keyboard (Tab key).
+- **Screen Reader Support**: Each color swatch should be labeled with its color name or hex value to provide context for visually impaired users.
+```
