@@ -1,0 +1,77 @@
+```mdx
+# Buttons
+
+Buttons are essential UI elements used to trigger actions and navigate within applications. They provide a clear and interactive way for users to engage with your interface, ensuring actions are easily accessible and visually distinct.
+
+## Usage Guidelines
+
+### When to Use
+- Use buttons to represent actions that users can take, such as submitting a form, saving data, or navigating to another page.
+- Ideal for primary actions where user engagement is crucial.
+
+### When Not to Use
+- Avoid using buttons for non-interactive elements or when no action is required.
+- Do not use buttons for items that are primarily informational or where a link would suffice.
+
+## Variants
+
+The Buttons component has several variants that cater to different use cases:
+
+1. **Primary Button**
+   - Use Case: For the main action on a page or form.
+   - Example: "Submit", "Save".
+
+2. **Secondary Button**
+   - Use Case: For actions that are less prominent than the primary action.
+   - Example: "Cancel", "Close".
+
+3. **Text Button**
+   - Use Case: For actions that require minimal emphasis, often used in navigation or within lists.
+   - Example: "Learn More".
+
+4. **Disabled Button**
+   - Use Case: To indicate that an action cannot be performed at a given time.
+   - Example: When a form is incomplete.
+
+## Props/Properties Table
+
+| Prop Name      | Type          | Description                                       |
+|----------------|---------------|---------------------------------------------------|
+| `variant`      | `string`      | Specifies the button variant (primary, secondary, text). |
+| `onClick`      | `function`    | Function to call when the button is clicked.     |
+| `disabled`     | `boolean`     | If true, the button is disabled and not clickable.|
+| `children`     | `node`        | Content of the button, typically text or icons.  |
+| `size`         | `string`      | Size of the button (small, medium, large).       |
+
+## Code Snippet
+
+```jsx
+import React from 'react';
+import { Button } from './Button';
+
+const Example = () => (
+  <div>
+    <Button variant="primary" onClick={() => alert('Primary Button Clicked!')}>
+      Submit
+    </Button>
+    <Button variant="secondary" onClick={() => alert('Secondary Button Clicked!')}>
+      Cancel
+    </Button>
+    <Button variant="text" onClick={() => alert('Text Button Clicked!')}>
+      Learn More
+    </Button>
+    <Button disabled>
+      Disabled Button
+    </Button>
+  </div>
+);
+
+export default Example;
+```
+
+## Accessibility Notes
+
+- **ARIA**: Ensure buttons have descriptive labels for screen readers. Use `aria-label` if the button's text is not descriptive enough.
+- **Keyboard Navigation**: Buttons should be focusable and operable using the keyboard. Ensure that users can navigate to buttons using the Tab key and activate them with the Enter or Space keys.
+- **Screen Reader Support**: Use clear and concise text within the button to communicate the action effectively. Consider using visually hidden text for additional context if necessary.
+```
