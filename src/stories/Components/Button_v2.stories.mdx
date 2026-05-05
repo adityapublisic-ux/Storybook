@@ -1,0 +1,661 @@
+```mdx
+# Button Component
+
+## Overview
+
+The Button component is a versatile UI element that can be used for various user interactions. It supports different sizes, hierarchies, states, and icon configurations, making it suitable for various contexts within your application.
+
+## Usage Guidelines
+
+### When to Use
+- Use buttons for actions that trigger a response or navigation, such as "Submit", "Cancel", or "Learn More".
+- Prefer buttons over links when the action is a primary task in the user flow.
+
+### When NOT to Use
+- Avoid using buttons for non-interactive elements, such as static text or labels.
+- Do not use buttons for actions that don't require user confirmation or execution.
+
+## Variants
+
+### Size=md, Hierarchy=Primary, State=Default, Icon only=False
+```jsx
+<Button size="md" hierarchy="primary" state="default" iconOnly={false}>Primary</Button>
+```
+
+### Size=md, Hierarchy=Link color, State=Default, Icon only=False
+```jsx
+<Button size="md" hierarchy="link color" state="default" iconOnly={false}>Link Color</Button>
+```
+
+### Size=md, Hierarchy=Link gray, State=Default, Icon only=False
+```jsx
+<Button size="md" hierarchy="link gray" state="default" iconOnly={false}>Link Gray</Button>
+```
+
+### Size=md, Hierarchy=Tertiary, State=Default, Icon only=False
+```jsx
+<Button size="md" hierarchy="tertiary" state="default" iconOnly={false}>Tertiary</Button>
+```
+
+### Size=md, Hierarchy=Secondary, State=Default, Icon only=False
+```jsx
+<Button size="md" hierarchy="secondary" state="default" iconOnly={false}>Secondary</Button>
+```
+
+### Size=md, Hierarchy=Primary, State=Disabled, Icon only=False
+```jsx
+<Button size="md" hierarchy="primary" state="disabled" iconOnly={false} disabled>Primary</Button>
+```
+
+### Size=md, Hierarchy=Link color, State=Disabled, Icon only=False
+```jsx
+<Button size="md" hierarchy="link color" state="disabled" iconOnly={false} disabled>Link Color</Button>
+```
+
+### Size=md, Hierarchy=Link gray, State=Disabled, Icon only=False
+```jsx
+<Button size="md" hierarchy="link gray" state="disabled" iconOnly={false} disabled>Link Gray</Button>
+```
+
+### Size=md, Hierarchy=Tertiary, State=Disabled, Icon only=False
+```jsx
+<Button size="md" hierarchy="tertiary" state="disabled" iconOnly={false} disabled>Tertiary</Button>
+```
+
+### Size=md, Hierarchy=Secondary, State=Disabled, Icon only=False
+```jsx
+<Button size="md" hierarchy="secondary" state="disabled" iconOnly={false} disabled>Secondary</Button>
+```
+
+### Size=md, Hierarchy=Primary, State=Focused, Icon only=False
+```jsx
+<Button size="md" hierarchy="primary" state="focused" iconOnly={false}>Primary</Button>
+```
+
+### Size=md, Hierarchy=Link color, State=Focused, Icon only=False
+```jsx
+<Button size="md" hierarchy="link color" state="focused" iconOnly={false}>Link Color</Button>
+```
+
+### Size=md, Hierarchy=Link gray, State=Focused, Icon only=False
+```jsx
+<Button size="md" hierarchy="link gray" state="focused" iconOnly={false}>Link Gray</Button>
+```
+
+### Size=md, Hierarchy=Tertiary, State=Focused, Icon only=False
+```jsx
+<Button size="md" hierarchy="tertiary" state="focused" iconOnly={false}>Tertiary</Button>
+```
+
+### Size=md, Hierarchy=Secondary, State=Focused, Icon only=False
+```jsx
+<Button size="md" hierarchy="secondary" state="focused" iconOnly={false}>Secondary</Button>
+```
+
+### Size=md, Hierarchy=Primary, State=Hover, Icon only=False
+```jsx
+<Button size="md" hierarchy="primary" state="hover" iconOnly={false}>Primary</Button>
+```
+
+### Size=md, Hierarchy=Primary, State=Loading, Icon only=False
+```jsx
+<Button size="md" hierarchy="primary" state="loading" iconOnly={false} loading>Loading...</Button>
+```
+
+### Size=md, Hierarchy=Link color, State=Hover, Icon only=False
+```jsx
+<Button size="md" hierarchy="link color" state="hover" iconOnly={false}>Link Color</Button>
+```
+
+### Size=md, Hierarchy=Link color, State=Loading, Icon only=False
+```jsx
+<Button size="md" hierarchy="link color" state="loading" iconOnly={false} loading>Loading...</Button>
+```
+
+### Size=md, Hierarchy=Link gray, State=Hover, Icon only=False
+```jsx
+<Button size="md" hierarchy="link gray" state="hover" iconOnly={false}>Link Gray</Button>
+```
+
+### Size=md, Hierarchy=Link gray, State=Loading, Icon only=False
+```jsx
+<Button size="md" hierarchy="link gray" state="loading" iconOnly={false} loading>Loading...</Button>
+```
+
+### Size=md, Hierarchy=Tertiary, State=Hover, Icon only=False
+```jsx
+<Button size="md" hierarchy="tertiary" state="hover" iconOnly={false}>Tertiary</Button>
+```
+
+### Size=md, Hierarchy=Tertiary, State=Loading, Icon only=False
+```jsx
+<Button size="md" hierarchy="tertiary" state="loading" iconOnly={false} loading>Loading...</Button>
+```
+
+### Size=md, Hierarchy=Secondary, State=Hover, Icon only=False
+```jsx
+<Button size="md" hierarchy="secondary" state="hover" iconOnly={false}>Secondary</Button>
+```
+
+### Size=md, Hierarchy=Secondary, State=Loading, Icon only=False
+```jsx
+<Button size="md" hierarchy="secondary" state="loading" iconOnly={false} loading>Loading...</Button>
+```
+
+### Size=md, Hierarchy=Primary, State=Default, Icon only=True
+```jsx
+<Button size="md" hierarchy="primary" state="default" iconOnly={true}>🛠️</Button>
+```
+
+### Size=md, Hierarchy=Tertiary, State=Default, Icon only=True
+```jsx
+<Button size="md" hierarchy="tertiary" state="default" iconOnly={true}>⚙️</Button>
+```
+
+### Size=md, Hierarchy=Secondary, State=Default, Icon only=True
+```jsx
+<Button size="md" hierarchy="secondary" state="default" iconOnly={true}>💼</Button>
+```
+
+### Size=md, Hierarchy=Primary, State=Disabled, Icon only=True
+```jsx
+<Button size="md" hierarchy="primary" state="disabled" iconOnly={true} disabled>🛠️</Button>
+```
+
+### Size=md, Hierarchy=Tertiary, State=Disabled, Icon only=True
+```jsx
+<Button size="md" hierarchy="tertiary" state="disabled" iconOnly={true} disabled>⚙️</Button>
+```
+
+### Size=md, Hierarchy=Secondary, State=Disabled, Icon only=True
+```jsx
+<Button size="md" hierarchy="secondary" state="disabled" iconOnly={true} disabled>💼</Button>
+```
+
+### Size=md, Hierarchy=Primary, State=Focused, Icon only=True
+```jsx
+<Button size="md" hierarchy="primary" state="focused" iconOnly={true}>🛠️</Button>
+```
+
+### Size=md, Hierarchy=Tertiary, State=Focused, Icon only=True
+```jsx
+<Button size="md" hierarchy="tertiary" state="focused" iconOnly={true}>⚙️</Button>
+```
+
+### Size=md, Hierarchy=Secondary, State=Focused, Icon only=True
+```jsx
+<Button size="md" hierarchy="secondary" state="focused" iconOnly={true}>💼</Button>
+```
+
+### Size=md, Hierarchy=Primary, State=Hover, Icon only=True
+```jsx
+<Button size="md" hierarchy="primary" state="hover" iconOnly={true}>🛠️</Button>
+```
+
+### Size=md, Hierarchy=Primary, State=Loading, Icon only=True
+```jsx
+<Button size="md" hierarchy="primary" state="loading" iconOnly={true} loading>Loading...</Button>
+```
+
+### Size=md, Hierarchy=Tertiary, State=Hover, Icon only=True
+```jsx
+<Button size="md" hierarchy="tertiary" state="hover" iconOnly={true}>⚙️</Button>
+```
+
+### Size=md, Hierarchy=Tertiary, State=Loading, Icon only=True
+```jsx
+<Button size="md" hierarchy="tertiary" state="loading" iconOnly={true} loading>Loading...</Button>
+```
+
+### Size=md, Hierarchy=Secondary, State=Hover, Icon only=True
+```jsx
+<Button size="md" hierarchy="secondary" state="hover" iconOnly={true}>💼</Button>
+```
+
+### Size=md, Hierarchy=Secondary, State=Loading, Icon only=True
+```jsx
+<Button size="md" hierarchy="secondary" state="loading" iconOnly={true} loading>Loading...</Button>
+```
+
+### Size=lg, Hierarchy=Primary, State=Default, Icon only=False
+```jsx
+<Button size="lg" hierarchy="primary" state="default" iconOnly={false}>Primary</Button>
+```
+
+### Size=lg, Hierarchy=Link color, State=Default, Icon only=False
+```jsx
+<Button size="lg" hierarchy="link color" state="default" iconOnly={false}>Link Color</Button>
+```
+
+### Size=lg, Hierarchy=Link gray, State=Default, Icon only=False
+```jsx
+<Button size="lg" hierarchy="link gray" state="default" iconOnly={false}>Link Gray</Button>
+```
+
+### Size=lg, Hierarchy=Tertiary, State=Default, Icon only=False
+```jsx
+<Button size="lg" hierarchy="tertiary" state="default" iconOnly={false}>Tertiary</Button>
+```
+
+### Size=lg, Hierarchy=Secondary, State=Default, Icon only=False
+```jsx
+<Button size="lg" hierarchy="secondary" state="default" iconOnly={false}>Secondary</Button>
+```
+
+### Size=lg, Hierarchy=Primary, State=Disabled, Icon only=False
+```jsx
+<Button size="lg" hierarchy="primary" state="disabled" iconOnly={false} disabled>Primary</Button>
+```
+
+### Size=lg, Hierarchy=Link color, State=Disabled, Icon only=False
+```jsx
+<Button size="lg" hierarchy="link color" state="disabled" iconOnly={false} disabled>Link Color</Button>
+```
+
+### Size=lg, Hierarchy=Link gray, State=Disabled, Icon only=False
+```jsx
+<Button size="lg" hierarchy="link gray" state="disabled" iconOnly={false} disabled>Link Gray</Button>
+```
+
+### Size=lg, Hierarchy=Tertiary, State=Disabled, Icon only=False
+```jsx
+<Button size="lg" hierarchy="tertiary" state="disabled" iconOnly={false} disabled>Tertiary</Button>
+```
+
+### Size=lg, Hierarchy=Secondary, State=Disabled, Icon only=False
+```jsx
+<Button size="lg" hierarchy="secondary" state="disabled" iconOnly={false} disabled>Secondary</Button>
+```
+
+### Size=lg, Hierarchy=Primary, State=Focused, Icon only=False
+```jsx
+<Button size="lg" hierarchy="primary" state="focused" iconOnly={false}>Primary</Button>
+```
+
+### Size=lg, Hierarchy=Link color, State=Focused, Icon only=False
+```jsx
+<Button size="lg" hierarchy="link color" state="focused" iconOnly={false}>Link Color</Button>
+```
+
+### Size=lg, Hierarchy=Link gray, State=Focused, Icon only=False
+```jsx
+<Button size="lg" hierarchy="link gray" state="focused" iconOnly={false}>Link Gray</Button>
+```
+
+### Size=lg, Hierarchy=Tertiary, State=Focused, Icon only=False
+```jsx
+<Button size="lg" hierarchy="tertiary" state="focused" iconOnly={false}>Tertiary</Button>
+```
+
+### Size=lg, Hierarchy=Secondary, State=Focused, Icon only=False
+```jsx
+<Button size="lg" hierarchy="secondary" state="focused" iconOnly={false}>Secondary</Button>
+```
+
+### Size=lg, Hierarchy=Primary, State=Hover, Icon only=False
+```jsx
+<Button size="lg" hierarchy="primary" state="hover" iconOnly={false}>Primary</Button>
+```
+
+### Size=lg, Hierarchy=Primary, State=Loading, Icon only=False
+```jsx
+<Button size="lg" hierarchy="primary" state="loading" iconOnly={false} loading>Loading...</Button>
+```
+
+### Size=lg, Hierarchy=Link color, State=Hover, Icon only=False
+```jsx
+<Button size="lg" hierarchy="link color" state="hover" iconOnly={false}>Link Color</Button>
+```
+
+### Size=lg, Hierarchy=Link color, State=Loading, Icon only=False
+```jsx
+<Button size="lg" hierarchy="link color" state="loading" iconOnly={false} loading>Loading...</Button>
+```
+
+### Size=lg, Hierarchy=Link gray, State=Hover, Icon only=False
+```jsx
+<Button size="lg" hierarchy="link gray" state="hover" iconOnly={false}>Link Gray</Button>
+```
+
+### Size=lg, Hierarchy=Link gray, State=Loading, Icon only=False
+```jsx
+<Button size="lg" hierarchy="link gray" state="loading" iconOnly={false} loading>Loading...</Button>
+```
+
+### Size=lg, Hierarchy=Tertiary, State=Hover, Icon only=False
+```jsx
+<Button size="lg" hierarchy="tertiary" state="hover" iconOnly={false}>Tertiary</Button>
+```
+
+### Size=lg, Hierarchy=Tertiary, State=Loading, Icon only=False
+```jsx
+<Button size="lg" hierarchy="tertiary" state="loading" iconOnly={false} loading>Loading...</Button>
+```
+
+### Size=lg, Hierarchy=Secondary, State=Hover, Icon only=False
+```jsx
+<Button size="lg" hierarchy="secondary" state="hover" iconOnly={false}>Secondary</Button>
+```
+
+### Size=lg, Hierarchy=Secondary, State=Loading, Icon only=False
+```jsx
+<Button size="lg" hierarchy="secondary" state="loading" iconOnly={false} loading>Loading...</Button>
+```
+
+### Size=lg, Hierarchy=Primary, State=Default, Icon only=True
+```jsx
+<Button size="lg" hierarchy="primary" state="default" iconOnly={true}>🛠️</Button>
+```
+
+### Size=lg, Hierarchy=Tertiary, State=Default, Icon only=True
+```jsx
+<Button size="lg" hierarchy="tertiary" state="default" iconOnly={true}>⚙️</Button>
+```
+
+### Size=lg, Hierarchy=Secondary, State=Default, Icon only=True
+```jsx
+<Button size="lg" hierarchy="secondary" state="default" iconOnly={true}>💼</Button>
+```
+
+### Size=lg, Hierarchy=Primary, State=Disabled, Icon only=True
+```jsx
+<Button size="lg" hierarchy="primary" state="disabled" iconOnly={true} disabled>🛠️</Button>
+```
+
+### Size=lg, Hierarchy=Tertiary, State=Disabled, Icon only=True
+```jsx
+<Button size="lg" hierarchy="tertiary" state="disabled" iconOnly={true} disabled>⚙️</Button>
+```
+
+### Size=lg, Hierarchy=Secondary, State=Disabled, Icon only=True
+```jsx
+<Button size="lg" hierarchy="secondary" state="disabled" iconOnly={true} disabled>💼</Button>
+```
+
+### Size=lg, Hierarchy=Primary, State=Focused, Icon only=True
+```jsx
+<Button size="lg" hierarchy="primary" state="focused" iconOnly={true}>🛠️</Button>
+```
+
+### Size=lg, Hierarchy=Tertiary, State=Focused, Icon only=True
+```jsx
+<Button size="lg" hierarchy="tertiary" state="focused" iconOnly={true}>⚙️</Button>
+```
+
+### Size=lg, Hierarchy=Secondary, State=Focused, Icon only=True
+```jsx
+<Button size="lg" hierarchy="secondary" state="focused" iconOnly={true}>💼</Button>
+```
+
+### Size=lg, Hierarchy=Primary, State=Hover, Icon only=True
+```jsx
+<Button size="lg" hierarchy="primary" state="hover" iconOnly={true}>🛠️</Button>
+```
+
+### Size=lg, Hierarchy=Primary, State=Loading, Icon only=True
+```jsx
+<Button size="lg" hierarchy="primary" state="loading" iconOnly={true} loading>Loading...</Button>
+```
+
+### Size=lg, Hierarchy=Tertiary, State=Hover, Icon only=True
+```jsx
+<Button size="lg" hierarchy="tertiary" state="hover" iconOnly={true}>⚙️</Button>
+```
+
+### Size=lg, Hierarchy=Tertiary, State=Loading, Icon only=True
+```jsx
+<Button size="lg" hierarchy="tertiary" state="loading" iconOnly={true} loading>Loading...</Button>
+```
+
+### Size=lg, Hierarchy=Secondary, State=Hover, Icon only=True
+```jsx
+<Button size="lg" hierarchy="secondary" state="hover" iconOnly={true}>💼</Button>
+```
+
+### Size=lg, Hierarchy=Secondary, State=Loading, Icon only=True
+```jsx
+<Button size="lg" hierarchy="secondary" state="loading" iconOnly={true} loading>Loading...</Button>
+```
+
+### Size=xl, Hierarchy=Primary, State=Default, Icon only=False
+```jsx
+<Button size="xl" hierarchy="primary" state="default" iconOnly={false}>Primary</Button>
+```
+
+### Size=xl, Hierarchy=Link color, State=Default, Icon only=False
+```jsx
+<Button size="xl" hierarchy="link color" state="default" iconOnly={false}>Link Color</Button>
+```
+
+### Size=xl, Hierarchy=Link gray, State=Default, Icon only=False
+```jsx
+<Button size="xl" hierarchy="link gray" state="default" iconOnly={false}>Link Gray</Button>
+```
+
+### Size=xl, Hierarchy=Tertiary, State=Default, Icon only=False
+```jsx
+<Button size="xl" hierarchy="tertiary" state="default" iconOnly={false}>Tertiary</Button>
+```
+
+### Size=xl, Hierarchy=Secondary, State=Default, Icon only=False
+```jsx
+<Button size="xl" hierarchy="secondary" state="default" iconOnly={false}>Secondary</Button>
+```
+
+### Size=xl, Hierarchy=Primary, State=Disabled, Icon only=False
+```jsx
+<Button size="xl" hierarchy="primary" state="disabled" iconOnly={false} disabled>Primary</Button>
+```
+
+### Size=xl, Hierarchy=Link color, State=Disabled, Icon only=False
+```jsx
+<Button size="xl" hierarchy="link color" state="disabled" iconOnly={false} disabled>Link Color</Button>
+```
+
+### Size=xl, Hierarchy=Link gray, State=Disabled, Icon only=False
+```jsx
+<Button size="xl" hierarchy="link gray" state="disabled" iconOnly={false} disabled>Link Gray</Button>
+```
+
+### Size=xl, Hierarchy=Tertiary, State=Disabled, Icon only=False
+```jsx
+<Button size="xl" hierarchy="tertiary" state="disabled" iconOnly={false} disabled>Tertiary</Button>
+```
+
+### Size=xl, Hierarchy=Secondary, State=Disabled, Icon only=False
+```jsx
+<Button size="xl" hierarchy="secondary" state="disabled" iconOnly={false} disabled>Secondary</Button>
+```
+
+### Size=xl, Hierarchy=Primary, State=Focused, Icon only=False
+```jsx
+<Button size="xl" hierarchy="primary" state="focused" iconOnly={false}>Primary</Button>
+```
+
+### Size=xl, Hierarchy=Link color, State=Focused, Icon only=False
+```jsx
+<Button size="xl" hierarchy="link color" state="focused" iconOnly={false}>Link Color</Button>
+```
+
+### Size=xl, Hierarchy=Link gray, State=Focused, Icon only=False
+```jsx
+<Button size="xl" hierarchy="link gray" state="focused" iconOnly={false}>Link Gray</Button>
+```
+
+### Size=xl, Hierarchy=Tertiary, State=Focused, Icon only=False
+```jsx
+<Button size="xl" hierarchy="tertiary" state="focused" iconOnly={false}>Tertiary</Button>
+```
+
+### Size=xl, Hierarchy=Secondary, State=Focused, Icon only=False
+```jsx
+<Button size="xl" hierarchy="secondary" state="focused" iconOnly={false}>Secondary</Button>
+```
+
+### Size=xl, Hierarchy=Primary, State=Hover, Icon only=False
+```jsx
+<Button size="xl" hierarchy="primary" state="hover" iconOnly={false}>Primary</Button>
+```
+
+### Size=xl, Hierarchy=Primary, State=Loading, Icon only=False
+```jsx
+<Button size="xl" hierarchy="primary" state="loading" iconOnly={false} loading>Loading...</Button>
+```
+
+### Size=xl, Hierarchy=Link color, State=Hover, Icon only=False
+```jsx
+<Button size="xl" hierarchy="link color" state="hover" iconOnly={false}>Link Color</Button>
+```
+
+### Size=xl, Hierarchy=Link color, State=Loading, Icon only=False
+```jsx
+<Button size="xl" hierarchy="link color" state="loading" iconOnly={false} loading>Loading...</Button>
+```
+
+### Size=xl, Hierarchy=Link gray, State=Hover, Icon only=False
+```jsx
+<Button size="xl" hierarchy="link gray" state="hover" iconOnly={false}>Link Gray</Button>
+```
+
+### Size=xl, Hierarchy=Link gray, State=Loading, Icon only=False
+```jsx
+<Button size="xl" hierarchy="link gray" state="loading" iconOnly={false} loading>Loading...</Button>
+```
+
+### Size=xl, Hierarchy=Tertiary, State=Hover, Icon only=False
+```jsx
+<Button size="xl" hierarchy="tertiary" state="hover" iconOnly={false}>Tertiary</Button>
+```
+
+### Size=xl, Hierarchy=Tertiary, State=Loading, Icon only=False
+```jsx
+<Button size="xl" hierarchy="tertiary" state="loading" iconOnly={false} loading>Loading...</Button>
+```
+
+### Size=xl, Hierarchy=Secondary, State=Hover, Icon only=False
+```jsx
+<Button size="xl" hierarchy="secondary" state="hover" iconOnly={false}>Secondary</Button>
+```
+
+### Size=xl, Hierarchy=Secondary, State=Loading, Icon only=False
+```jsx
+<Button size="xl" hierarchy="secondary" state="loading" iconOnly={false} loading>Loading...</Button>
+```
+
+### Size=xl, Hierarchy=Primary, State=Default, Icon only=True
+```jsx
+<Button size="xl" hierarchy="primary" state="default" iconOnly={true}>🛠️</Button>
+```
+
+### Size=xl, Hierarchy=Tertiary, State=Default, Icon only=True
+```jsx
+<Button size="xl" hierarchy="tertiary" state="default" iconOnly={true}>⚙️</Button>
+```
+
+### Size=xl, Hierarchy=Secondary, State=Default, Icon only=True
+```jsx
+<Button size="xl" hierarchy="secondary" state="default" iconOnly={true}>💼</Button>
+```
+
+### Size=xl, Hierarchy=Primary, State=Disabled, Icon only=True
+```jsx
+<Button size="xl" hierarchy="primary" state="disabled" iconOnly={true} disabled>🛠️</Button>
+```
+
+### Size=xl, Hierarchy=Tertiary, State=Disabled, Icon only=True
+```jsx
+<Button size="xl" hierarchy="tertiary" state="disabled" iconOnly={true} disabled>⚙️</Button>
+```
+
+### Size=xl, Hierarchy=Secondary, State=Disabled, Icon only=True
+```jsx
+<Button size="xl" hierarchy="secondary" state="disabled" iconOnly={true} disabled>💼</Button>
+```
+
+### Size=xl, Hierarchy=Primary, State=Focused, Icon only=True
+```jsx
+<Button size="xl" hierarchy="primary" state="focused" iconOnly={true}>🛠️</Button>
+```
+
+### Size=xl, Hierarchy=Tertiary, State=Focused, Icon only=True
+```jsx
+<Button size="xl" hierarchy="tertiary" state="focused" iconOnly={true}>⚙️</Button>
+```
+
+### Size=xl, Hierarchy=Secondary, State=Focused, Icon only=True
+```jsx
+<Button size="xl" hierarchy="secondary" state="focused" iconOnly={true}>💼</Button>
+```
+
+### Size=xl, Hierarchy=Primary, State=Hover, Icon only=True
+```jsx
+<Button size="xl" hierarchy="primary" state="hover" iconOnly={true}>🛠️</Button>
+```
+
+### Size=xl, Hierarchy=Primary, State=Loading, Icon only=True
+```jsx
+<Button size="xl" hierarchy="primary" state="loading" iconOnly={true} loading>Loading...</Button>
+```
+
+### Size=xl, Hierarchy=Tertiary, State=Hover, Icon only=True
+```jsx
+<Button size="xl" hierarchy="tertiary" state="hover" iconOnly={true}>⚙️</Button>
+```
+
+### Size=xl, Hierarchy=Tertiary, State=Loading, Icon only=True
+```jsx
+<Button size="xl" hierarchy="tertiary" state="loading" iconOnly={true} loading>Loading...</Button>
+```
+
+### Size=xl, Hierarchy=Secondary, State=Hover, Icon only=True
+```jsx
+<Button size="xl" hierarchy="secondary" state="hover" iconOnly={true}>💼</Button>
+```
+
+### Size=xl, Hierarchy=Secondary, State=Loading, Icon only=True
+```jsx
+<Button size="xl" hierarchy="secondary" state="loading" iconOnly={true} loading>Loading...</Button>
+```
+
+## Properties
+
+| Property    | Type     | Description                                  |
+|-------------|----------|----------------------------------------------|
+| Size        | string   | The size of the button (sm, md, lg, xl)     |
+| Hierarchy   | string   | The visual priority (Primary, Link color, Link gray, Tertiary, Secondary) |
+| State       | string   | The button state (Default, Disabled, Focused, Hover, Loading) |
+| Icon only   | boolean  | Whether the button should display an icon only |
+
+## Code Snippets
+
+Refer to the code snippets provided under each variant section.
+
+## Do's & Don'ts
+
+### Do's
+- **Do** use descriptive text within buttons to convey action.
+- **Do** ensure the button color contrasts well with the background for visibility.
+
+### Don'ts
+- **Don't** use buttons for navigation that could be achieved by links.
+- **Don't** use vague labels like "Click here" without context.
+
+## Accessibility
+
+### ARIA
+- Use `aria-label` to provide accessible names for buttons that don't contain visible text.
+- Ensure buttons have a clear role and state for screen readers.
+
+### Keyboard Navigation
+- Buttons should be focusable and operable via the keyboard using the `Enter` or `Space` keys.
+- Ensure proper focus management when using buttons in forms or dynamic components.
+
+### Screen Reader
+- Ensure all buttons are announced clearly by screen readers.
+- Use descriptive labels that convey the action of the button.
+
+## Related Components
+- **Link**: For navigation tasks that do not require a confirmation action.
+- **IconButton**: For actions that primarily need an icon representation.
+- **ToggleButton**: For actions that require switching states or options.
+```
