@@ -1,0 +1,71 @@
+```mdx
+# Button Component
+
+The Button component is a versatile UI element designed to trigger actions and navigate users through applications. It is styled with a white fill and a purple stroke, making it visually appealing and easy to integrate into various designs. The Button is highly customizable, allowing for various sizes, colors, and functionalities.
+
+## Usage Guidelines
+
+### When to Use
+- Use the Button component to initiate actions such as submitting forms, triggering dialogues, or navigating between pages.
+- Ideal for primary actions that require user attention, such as "Submit," "Save," or "Continue."
+
+### When Not to Use
+- Avoid using the Button component for non-interactive elements or static content, such as labels or headings.
+- Refrain from using multiple buttons for a single action; instead, consolidate actions into a single button when possible.
+
+## Variants and Use Cases
+
+### Primary Button
+- **Use Case**: Main action on the page, such as "Sign Up."
+```jsx
+<Button variant="primary">Sign Up</Button>
+```
+
+### Secondary Button
+- **Use Case**: Secondary actions that complement the primary action, such as "Cancel."
+```jsx
+<Button variant="secondary">Cancel</Button>
+```
+
+### Disabled Button
+- **Use Case**: Indicate an action that is currently unavailable.
+```jsx
+<Button disabled>Disabled</Button>
+```
+
+## Props Table
+
+| Prop          | Type     | Default       | Description                                      |
+|---------------|----------|---------------|--------------------------------------------------|
+| `variant`     | string   | "primary"     | Defines the button style variant (e.g., primary, secondary). |
+| `disabled`    | boolean  | false         | If true, the button will be unclickable and visually indicate its disabled state. |
+| `onClick`     | function | undefined     | Function to call when the button is clicked.    |
+| `children`    | node     | "Button"      | Content to be displayed within the button.       |
+
+## Code Snippet
+
+```jsx
+import React from 'react';
+import { Button } from './Button';
+
+const App = () => {
+  const handleClick = () => {
+    alert('Button clicked!');
+  };
+
+  return (
+    <div>
+      <Button onClick={handleClick}>Click Me</Button>
+    </div>
+  );
+};
+
+export default App;
+```
+
+## Accessibility Notes
+
+- **ARIA**: Ensure that all buttons have clear, descriptive labels for screen readers. Use `aria-label` if the button text is not sufficient to convey its purpose.
+- **Keyboard Navigation**: Buttons should be focusable and navigable using the Tab key. Ensure they respond to Enter or Spacebar key presses to trigger actions.
+- **Screen Reader Support**: Provide meaningful feedback or alerts after button interactions to assist users who rely on screen readers. Consider using `role="button"` and `tabIndex="0"` for non-button elements that behave like buttons.
+```
