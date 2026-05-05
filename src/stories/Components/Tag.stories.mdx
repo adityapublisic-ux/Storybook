@@ -1,0 +1,648 @@
+```mdx
+# Tag Component
+
+## Overview
+
+The Tag component is a versatile UI element used for labeling, categorizing, or indicating status. It supports various sizes, icons, actions, and optional checkboxes, making it adaptable for multiple use cases within your application.
+
+## Usage Guidelines
+
+Use the Tag component when you want to:
+- Display a label associated with an item.
+- Indicate a status or category.
+- Allow users to select items using checkboxes.
+
+Avoid using the Tag component when:
+- You require complex interactions (consider using buttons or dropdowns).
+- The label does not need to be interactive.
+  
+## Variants
+
+The Tag component has a total of 72 variants based on size, icon, action, and checkbox states. Below are the variants along with their respective code snippets.
+
+### Size=sm, Icon=False, Action=Text only, Checkbox=False
+
+```jsx
+<Tag size="sm" icon={false} action="text" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=sm, Icon=False, Action=Text only, Checkbox=True
+
+```jsx
+<Tag size="sm" icon={false} action="text" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=sm, Icon=False, Action=X close, Checkbox=False
+
+```jsx
+<Tag size="sm" icon={false} action="close" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=sm, Icon=False, Action=X close, Checkbox=True
+
+```jsx
+<Tag size="sm" icon={false} action="close" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=sm, Icon=False, Action=Count, Checkbox=False
+
+```jsx
+<Tag size="sm" icon={false} action="count" checkbox={false}>
+  5
+</Tag>
+```
+
+### Size=sm, Icon=False, Action=Count, Checkbox=True
+
+```jsx
+<Tag size="sm" icon={false} action="count" checkbox={true}>
+  5
+</Tag>
+```
+
+### Size=md, Icon=False, Action=Text only, Checkbox=False
+
+```jsx
+<Tag size="md" icon={false} action="text" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=md, Icon=False, Action=Text only, Checkbox=True
+
+```jsx
+<Tag size="md" icon={false} action="text" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=md, Icon=False, Action=X close, Checkbox=False
+
+```jsx
+<Tag size="md" icon={false} action="close" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=md, Icon=False, Action=X close, Checkbox=True
+
+```jsx
+<Tag size="md" icon={false} action="close" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=md, Icon=False, Action=Count, Checkbox=False
+
+```jsx
+<Tag size="md" icon={false} action="count" checkbox={false}>
+  10
+</Tag>
+```
+
+### Size=md, Icon=False, Action=Count, Checkbox=True
+
+```jsx
+<Tag size="md" icon={false} action="count" checkbox={true}>
+  10
+</Tag>
+```
+
+### Size=lg, Icon=False, Action=Text only, Checkbox=False
+
+```jsx
+<Tag size="lg" icon={false} action="text" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=lg, Icon=False, Action=Text only, Checkbox=True
+
+```jsx
+<Tag size="lg" icon={false} action="text" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=lg, Icon=False, Action=X close, Checkbox=False
+
+```jsx
+<Tag size="lg" icon={false} action="close" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=lg, Icon=False, Action=X close, Checkbox=True
+
+```jsx
+<Tag size="lg" icon={false} action="close" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=lg, Icon=False, Action=Count, Checkbox=False
+
+```jsx
+<Tag size="lg" icon={false} action="count" checkbox={false}>
+  15
+</Tag>
+```
+
+### Size=lg, Icon=False, Action=Count, Checkbox=True
+
+```jsx
+<Tag size="lg" icon={false} action="count" checkbox={true}>
+  15
+</Tag>
+```
+
+### Size=sm, Icon=Dot, Action=Text only, Checkbox=False
+
+```jsx
+<Tag size="sm" icon="dot" action="text" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=sm, Icon=Dot, Action=Text only, Checkbox=True
+
+```jsx
+<Tag size="sm" icon="dot" action="text" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=sm, Icon=Dot, Action=X close, Checkbox=False
+
+```jsx
+<Tag size="sm" icon="dot" action="close" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=sm, Icon=Dot, Action=X close, Checkbox=True
+
+```jsx
+<Tag size="sm" icon="dot" action="close" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=sm, Icon=Dot, Action=Count, Checkbox=False
+
+```jsx
+<Tag size="sm" icon="dot" action="count" checkbox={false}>
+  3
+</Tag>
+```
+
+### Size=sm, Icon=Dot, Action=Count, Checkbox=True
+
+```jsx
+<Tag size="sm" icon="dot" action="count" checkbox={true}>
+  3
+</Tag>
+```
+
+### Size=md, Icon=Dot, Action=Text only, Checkbox=False
+
+```jsx
+<Tag size="md" icon="dot" action="text" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=md, Icon=Dot, Action=Text only, Checkbox=True
+
+```jsx
+<Tag size="md" icon="dot" action="text" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=md, Icon=Dot, Action=X close, Checkbox=False
+
+```jsx
+<Tag size="md" icon="dot" action="close" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=md, Icon=Dot, Action=X close, Checkbox=True
+
+```jsx
+<Tag size="md" icon="dot" action="close" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=md, Icon=Dot, Action=Count, Checkbox=False
+
+```jsx
+<Tag size="md" icon="dot" action="count" checkbox={false}>
+  7
+</Tag>
+```
+
+### Size=md, Icon=Dot, Action=Count, Checkbox=True
+
+```jsx
+<Tag size="md" icon="dot" action="count" checkbox={true}>
+  7
+</Tag>
+```
+
+### Size=lg, Icon=Dot, Action=Text only, Checkbox=False
+
+```jsx
+<Tag size="lg" icon="dot" action="text" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=lg, Icon=Dot, Action=Text only, Checkbox=True
+
+```jsx
+<Tag size="lg" icon="dot" action="text" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=lg, Icon=Dot, Action=X close, Checkbox=False
+
+```jsx
+<Tag size="lg" icon="dot" action="close" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=lg, Icon=Dot, Action=X close, Checkbox=True
+
+```jsx
+<Tag size="lg" icon="dot" action="close" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=lg, Icon=Dot, Action=Count, Checkbox=False
+
+```jsx
+<Tag size="lg" icon="dot" action="count" checkbox={false}>
+  12
+</Tag>
+```
+
+### Size=lg, Icon=Dot, Action=Count, Checkbox=True
+
+```jsx
+<Tag size="lg" icon="dot" action="count" checkbox={true}>
+  12
+</Tag>
+```
+
+### Size=sm, Icon=Country, Action=Text only, Checkbox=False
+
+```jsx
+<Tag size="sm" icon="country" action="text" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=sm, Icon=Country, Action=Text only, Checkbox=True
+
+```jsx
+<Tag size="sm" icon="country" action="text" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=sm, Icon=Country, Action=X close, Checkbox=False
+
+```jsx
+<Tag size="sm" icon="country" action="close" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=sm, Icon=Country, Action=X close, Checkbox=True
+
+```jsx
+<Tag size="sm" icon="country" action="close" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=sm, Icon=Country, Action=Count, Checkbox=False
+
+```jsx
+<Tag size="sm" icon="country" action="count" checkbox={false}>
+  8
+</Tag>
+```
+
+### Size=sm, Icon=Country, Action=Count, Checkbox=True
+
+```jsx
+<Tag size="sm" icon="country" action="count" checkbox={true}>
+  8
+</Tag>
+```
+
+### Size=md, Icon=Country, Action=Text only, Checkbox=False
+
+```jsx
+<Tag size="md" icon="country" action="text" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=md, Icon=Country, Action=Text only, Checkbox=True
+
+```jsx
+<Tag size="md" icon="country" action="text" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=md, Icon=Country, Action=X close, Checkbox=False
+
+```jsx
+<Tag size="md" icon="country" action="close" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=md, Icon=Country, Action=X close, Checkbox=True
+
+```jsx
+<Tag size="md" icon="country" action="close" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=md, Icon=Country, Action=Count, Checkbox=False
+
+```jsx
+<Tag size="md" icon="country" action="count" checkbox={false}>
+  20
+</Tag>
+```
+
+### Size=md, Icon=Country, Action=Count, Checkbox=True
+
+```jsx
+<Tag size="md" icon="country" action="count" checkbox={true}>
+  20
+</Tag>
+```
+
+### Size=lg, Icon=Country, Action=Text only, Checkbox=False
+
+```jsx
+<Tag size="lg" icon="country" action="text" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=lg, Icon=Country, Action=Text only, Checkbox=True
+
+```jsx
+<Tag size="lg" icon="country" action="text" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=lg, Icon=Country, Action=X close, Checkbox=False
+
+```jsx
+<Tag size="lg" icon="country" action="close" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=lg, Icon=Country, Action=X close, Checkbox=True
+
+```jsx
+<Tag size="lg" icon="country" action="close" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=lg, Icon=Country, Action=Count, Checkbox=False
+
+```jsx
+<Tag size="lg" icon="country" action="count" checkbox={false}>
+  25
+</Tag>
+```
+
+### Size=lg, Icon=Country, Action=Count, Checkbox=True
+
+```jsx
+<Tag size="lg" icon="country" action="count" checkbox={true}>
+  25
+</Tag>
+```
+
+### Size=sm, Icon=Avatar, Action=Text only, Checkbox=False
+
+```jsx
+<Tag size="sm" icon="avatar" action="text" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=sm, Icon=Avatar, Action=Text only, Checkbox=True
+
+```jsx
+<Tag size="sm" icon="avatar" action="text" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=sm, Icon=Avatar, Action=X close, Checkbox=False
+
+```jsx
+<Tag size="sm" icon="avatar" action="close" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=sm, Icon=Avatar, Action=X close, Checkbox=True
+
+```jsx
+<Tag size="sm" icon="avatar" action="close" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=sm, Icon=Avatar, Action=Count, Checkbox=False
+
+```jsx
+<Tag size="sm" icon="avatar" action="count" checkbox={false}>
+  6
+</Tag>
+```
+
+### Size=sm, Icon=Avatar, Action=Count, Checkbox=True
+
+```jsx
+<Tag size="sm" icon="avatar" action="count" checkbox={true}>
+  6
+</Tag>
+```
+
+### Size=md, Icon=Avatar, Action=Text only, Checkbox=False
+
+```jsx
+<Tag size="md" icon="avatar" action="text" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=md, Icon=Avatar, Action=Text only, Checkbox=True
+
+```jsx
+<Tag size="md" icon="avatar" action="text" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=md, Icon=Avatar, Action=X close, Checkbox=False
+
+```jsx
+<Tag size="md" icon="avatar" action="close" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=md, Icon=Avatar, Action=X close, Checkbox=True
+
+```jsx
+<Tag size="md" icon="avatar" action="close" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=md, Icon=Avatar, Action=Count, Checkbox=False
+
+```jsx
+<Tag size="md" icon="avatar" action="count" checkbox={false}>
+  9
+</Tag>
+```
+
+### Size=md, Icon=Avatar, Action=Count, Checkbox=True
+
+```jsx
+<Tag size="md" icon="avatar" action="count" checkbox={true}>
+  9
+</Tag>
+```
+
+### Size=lg, Icon=Avatar, Action=Text only, Checkbox=False
+
+```jsx
+<Tag size="lg" icon="avatar" action="text" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=lg, Icon=Avatar, Action=Text only, Checkbox=True
+
+```jsx
+<Tag size="lg" icon="avatar" action="text" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=lg, Icon=Avatar, Action=X close, Checkbox=False
+
+```jsx
+<Tag size="lg" icon="avatar" action="close" checkbox={false}>
+  Tag Text
+</Tag>
+```
+
+### Size=lg, Icon=Avatar, Action=X close, Checkbox=True
+
+```jsx
+<Tag size="lg" icon="avatar" action="close" checkbox={true}>
+  Tag Text
+</Tag>
+```
+
+### Size=lg, Icon=Avatar, Action=Count, Checkbox=False
+
+```jsx
+<Tag size="lg" icon="avatar" action="count" checkbox={false}>
+  11
+</Tag>
+```
+
+### Size=lg, Icon=Avatar, Action=Count, Checkbox=True
+
+```jsx
+<Tag size="lg" icon="avatar" action="count" checkbox={true}>
+  11
+</Tag>
+```
+
+## Properties
+
+| Property  | Type      | Description                                     |
+|-----------|-----------|-------------------------------------------------|
+| `size`    | `string`  | Size of the tag. Options: `sm`, `md`, `lg`.    |
+| `icon`    | `string`  | Icon type. Options: `false`, `Dot`, `Country`, `Avatar`. |
+| `action`  | `string`  | Action type. Options: `Text only`, `X close`, `Count`. |
+| `checkbox`| `boolean` | Whether the tag has a checkbox.                |
+
+## Code Snippets
+
+Refer to the Variants section for code snippets showcasing each possible variant of the Tag component.
+
+## Do's & Don'ts
+
+### Do's
+- **Do** use descriptive text for tags to enhance clarity.
+```jsx
+<Tag size="sm" icon="dot" action="text" checkbox={false}>
+  Active
+</Tag>
+```
+
+### Don'ts
+- **Don't** use vague labels that don't convey meaning.
+```jsx
+<Tag size="sm" icon="dot" action="text" checkbox={false}>
+  Item
+</Tag>
+```
+
+## Accessibility
+
+- **ARIA Labels**: Use `aria-label` to provide additional context for screen readers.
+```jsx
+<Tag size="sm" icon="dot" action="text" checkbox={false} aria-label="Active Tag">
+  Active
+</Tag>
+```
+
+- **Keyboard Navigation**: Ensure that users can navigate to and interact with tags using keyboard shortcuts (e.g., Tab to focus, Space to toggle checkboxes).
+
+- **Screen Reader Support**: Make sure the text inside the tag clearly describes its purpose for screen reader users.
+
+## Related Components
+
+- [Badge](#): For displaying status indicators.
+- [Button](#): For actions that require user interaction.
+- [Chip](#): For selections or filtering items.
+```
