@@ -1,0 +1,147 @@
+```mdx
+# Buttons
+
+## Overview
+
+The Buttons component is a versatile UI element designed to trigger actions and events. It comes in different styles, sizes, and states, enabling developers to implement various button functionalities across their applications.
+
+## Usage Guidelines
+
+### When to Use
+- Use buttons to initiate actions (e.g., submitting a form, opening a modal).
+- Opt for primary buttons for primary actions and secondary buttons for secondary actions.
+- Utilize disabled buttons to indicate that an action cannot be performed at that moment.
+
+### When NOT to Use
+- Avoid using buttons for non-interactive elements (e.g., labels, static text).
+- Do not use buttons for navigation when links are more appropriate.
+
+## Variants
+
+The Buttons component includes 18 variants based on state, type, and size.
+
+### States=Default, Type=Primary, Size=Large
+```jsx
+<Button variant="primary" size="large">Primary Large Button</Button>
+```
+
+### States=Disabled, Type=Primary, Size=Large
+```jsx
+<Button variant="primary" size="large" disabled>Primary Large Button (Disabled)</Button>
+```
+
+### States=Default, Type=Secondary, Size=Large
+```jsx
+<Button variant="secondary" size="large">Secondary Large Button</Button>
+```
+
+### States=Disabled, Type=Secondary, Size=Large
+```jsx
+<Button variant="secondary" size="large" disabled>Secondary Large Button (Disabled)</Button>
+```
+
+### States=Default, Type=Tertiary, Size=Large
+```jsx
+<Button variant="tertiary" size="large">Tertiary Large Button</Button>
+```
+
+### States=Disabled, Type=Tertiary, Size=Large
+```jsx
+<Button variant="tertiary" size="large" disabled>Tertiary Large Button (Disabled)</Button>
+```
+
+### States=Default, Type=Primary, Size=Medium
+```jsx
+<Button variant="primary" size="medium">Primary Medium Button</Button>
+```
+
+### States=Disabled, Type=Primary, Size=Medium
+```jsx
+<Button variant="primary" size="medium" disabled>Primary Medium Button (Disabled)</Button>
+```
+
+### States=Default, Type=Secondary, Size=Medium
+```jsx
+<Button variant="secondary" size="medium">Secondary Medium Button</Button>
+```
+
+### States=Disabled, Type=Secondary, Size=Medium
+```jsx
+<Button variant="secondary" size="medium" disabled>Secondary Medium Button (Disabled)</Button>
+```
+
+### States=Default, Type=Tertiary, Size=Medium
+```jsx
+<Button variant="tertiary" size="medium">Tertiary Medium Button</Button>
+```
+
+### States=Disabled, Type=Tertiary, Size=Medium
+```jsx
+<Button variant="tertiary" size="medium" disabled>Tertiary Medium Button (Disabled)</Button>
+```
+
+### States=Default, Type=Primary, Size=Small
+```jsx
+<Button variant="primary" size="small">Primary Small Button</Button>
+```
+
+### States=Disabled, Type=Primary, Size=Small
+```jsx
+<Button variant="primary" size="small" disabled>Primary Small Button (Disabled)</Button>
+```
+
+### States=Default, Type=Secondary, Size=Small
+```jsx
+<Button variant="secondary" size="small">Secondary Small Button</Button>
+```
+
+### States=Disabled, Type=Secondary, Size=Small
+```jsx
+<Button variant="secondary" size="small" disabled>Secondary Small Button (Disabled)</Button>
+```
+
+### States=Default, Type=Tertiary, Size=Small
+```jsx
+<Button variant="tertiary" size="small">Tertiary Small Button</Button>
+```
+
+### States=Disabled, Type=Tertiary, Size=Small
+```jsx
+<Button variant="tertiary" size="small" disabled>Tertiary Small Button (Disabled)</Button>
+```
+
+## Properties
+
+| Property | Description |
+|----------|-------------|
+| States   | The state of the button (Default, Disabled) |
+| Type     | The button type (Primary, Secondary, Tertiary) |
+| Size     | The size of the button (Large, Medium, Small) |
+
+## Code Snippets
+
+Refer to the Variants section for code snippets for each button variant.
+
+## Do's & Don'ts
+
+### Do's
+- **Do** use primary buttons for actions that need user attention.
+- **Do** ensure buttons have sufficient contrast against their background.
+
+### Don'ts
+- **Don't** style buttons with non-standard styles that confuse users.
+- **Don't** use buttons for elements that don't perform actions (e.g., headings).
+
+## Accessibility
+
+- **ARIA Attributes**: Use `aria-disabled="true"` for disabled buttons to inform assistive technologies that the button is not interactive.
+- **Keyboard Navigation**: Ensure buttons are focusable and can be activated via the keyboard (typically Enter or Space).
+- **Screen Readers**: Provide meaningful text for buttons to convey their purpose. Avoid using only icons without text.
+
+## Related Components
+
+- [Links](#): Use links for navigation instead of buttons when appropriate.
+- [Icons](#): Combine buttons with icons for enhanced visual appeal.
+- [Forms](#): Use buttons within forms to submit data or trigger actions.
+
+```
